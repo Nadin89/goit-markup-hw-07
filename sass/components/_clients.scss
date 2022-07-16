@@ -1,0 +1,38 @@
+/* Clients styles */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__title {
+  @extend %h2-title;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--social-links-color);
+  border: 1px solid var(--social-links-color);
+  border-radius: 4px;
+
+  transition: color var(--anim), border var(--anim);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+
+}
+.clients__icons {
+  fill: currentColor;
+}
