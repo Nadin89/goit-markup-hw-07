@@ -1,9 +1,13 @@
 .main-nav__list {
   display: flex;
+  padding-top: 32px;
 
   & .item:not(:last-child) {
     margin-right: 50px;
   }
+  @media screen and (max-width: 767px) {
+    display: none;
+}
 }
 
 .main-nav__content {
@@ -46,3 +50,5 @@
     opacity: 100;
   }
 }
+
+
